@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	      <title>DigSymb Weight Tracker</title>
+	      <link rel="stylesheet" type="text/css" href="">
+	
+	      <style>
+		  body{
+			text-align: center;
+           }
+          #track{
+           height: 40em; 
+           }
+           
+           #subt a{
+           text-decoration: none;
+           font-weight: bold;
+           color: red;
+           }
+           #sub{
+           font-weight: bold;
+           color: blue;
+           }
+           input{
+           text-align: center;
+           background:#e6e6e6;
+           width: 30%;
+           height: 4em;
+           }
+           h1{
+           font-size: 3.5em;
+           }
+           h3{
+           border-bottom: 2px solid orange;
+           font-size: 2.5em;
+           }
+           .va{
+            font-size: 2em;
+            }
+            #pw{
+            height: 1.3em;
+            padding:10px;
+            font-weight: bold;
+            }
+           #male:active, #female:active{
+           background: orange;
+           }
+           #sub, #subt{
+           width: 30%;
+           height: 3em;
+           font-size: 1.5em;
+           }
+           #but1, #but2, #but3, #but4{
+           width: 5em;
+           height: 5em;
+           font-size: 0.5em;
+           }
+           
+		
+          
+         </style>
+</head>
+<body>
+<div id="all">
+	      <img id="track" src="Trackerimages/tracker.jpg" width="100%">
+	<div id="info">
+	      <h1>Welcome to Digsymb sxBMI</h1>
+	      <h3>Enter your body info;</h3>
+	</div>
+
+	<div>
+		<p class="va">Unit Mes</p>
+
+		<button id="but1" type="button" onclick="myFunction()">
+		kg/cm</button>
+		<button id="but2" type="button" onclick="myFunction()">
+		lb/ft</button>
+	</div>
+
+	<div id="db">
+		<p class="va">BirthDay</p>
+		<input id="dob" type="date" name="Date" placeholder="30/11/1981" required>
+  </div>
+
+	<div id="gender">
+		<p class="va">Gender</p>
+		<button id="but3" type="radio" onclick="myKey()">
+		m</button>
+		<button id="but4" type="radio" onclick="myKey()">
+		f</button>
+	</div>
+
+	<div id="weight">
+		<p class="va">C-Weight</p>
+		<input type="number" name="weight" placeholder="Current Weight" required>
+  </div>
+
+	<div id="dw">
+	    <p class="va">T-Weight</p>
+		<input type="number" name="dweight" placeholder="Target Weight" required>
+	</div>
+
+	<div id="height">
+		<p class="va">Height</p>
+		<input type="number" name="height" placeholder="150 cm" required>
+	</div>
+	<br>
+		
+	<div id="password">
+		<p class="va">Password</p>
+		<input id="pw" type="password" name="password" placeholder="**************" required>      
+	</div>
+	<br>
+
+	<div id ="submit">
+		<button id="subt" type="button" onclick="mySubmit()">
+		<a href="save.html">
+		SUBMIT</a>
+    </button>
+        <br><br>
+        	
+		<button id="sub" type="button" onclick="mySubmit()">
+		Export Data
+        </button>
+	</div>
+</div>
+</body>
+</html>
